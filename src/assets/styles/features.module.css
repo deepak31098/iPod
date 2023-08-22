@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  overflow: hidden;
+}
+#game {
+  display: flex;
+  flex-direction: column;
+}
+
+#game img {
+  width: 150px;
+}
+
+#settings {
+  display: flex;
+  flex-direction: column;
+}
+
+#settings img {
+  width: 100px;
+}

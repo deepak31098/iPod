@@ -1,0 +1,111 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../images/earphone.jpg");
+  overflow: hidden;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.ipod-container {
+  background-color: #d8d8df;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 10px #acacaa inset;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+}
+
+.batteryContainer {
+  color: white;
+  display: flex;
+}
+
+.indicator {
+  height: 30px;
+  background-color: rgb(25, 116, 25);
+  width: 5px;
+  position: absolute;
+  border-radius: 20px;
+  transform: rotate(90deg);
+  right: 40px;
+}
+
+.indicator > div {
+  height: 30%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.charging {
+  animation-name: battery;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.batteryContainer svg {
+  color: green;
+  position: absolute;
+  height: 16px;
+  right: 60px;
+  top: 30px;
+  animation-name: batteryicon;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.chargingPoint {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-align: end;
+  align-items: center;
+  display: flex;
+  color: grey;
+  font-size: 20px;
+}
+
+.powerButton {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#on {
+  box-shadow: 0 0 10px 5px green inset;
+}
+
+#off {
+  box-shadow: 0 0 10px 5px red inset;
+}
+
+@keyframes battery {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes batteryicon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    background-size: 100% 60%;
+  }
+}
