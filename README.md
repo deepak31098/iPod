@@ -1,5 +1,3 @@
-
-
 # iPod App
 #### iPod is a digital homage to the iconic iPod, designed to bring back the nostalgia of early 2000s portable music players. Experience the classic iPod interface on your modern device. 🎵📱
 
